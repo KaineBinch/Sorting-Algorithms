@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Sort Animation</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="button-container">
+      <button onclick="goBackHome()">Go Back Home</button>
+      <button onclick="startAnimation()">Start Animation</button>
+      <button onclick="stopAnimation()">Stop Animation</button>
+      <button onclick="handleRefresh()">Start Again</button>
+    </div>
+    <script src="./p5/p5.min.js"></script>
+    <script src="./bubbleSort.js"></script>
+    <script>
+      function startAnimation() {
+        sorting = true;
+        loop();
+      }
+
+      function stopAnimation() {
+        sorting = false;
+        noLoop();
+      }
+
+      function goBackHome() {
+        window.location.href = "index.html";
+      }
+
+      function handleRefresh() {
+        window.location.reload();
+      }
+    </script>
+  </body>
+</html>
